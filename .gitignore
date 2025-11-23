@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE settings
+.vscode/
+.idea/
+
+# Django files
+*.log
+db.sqlite3
+/media/
+staticfiles/
+
+# Environment variables
+.env
+*.env
+penv
+
+# Byte-compiled / optimized / DLL files
+*.egg-info/
+*.egg
+.eggs/
+
+# Build directories
+build/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
