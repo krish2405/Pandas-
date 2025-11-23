@@ -21,7 +21,7 @@ staticfiles/
 # Environment variables
 .env
 *.env
-penv
+penv/
 
 # Byte-compiled / optimized / DLL files
 *.egg-info/
