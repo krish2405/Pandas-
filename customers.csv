@@ -1,0 +1,6 @@
+| customer_id | name    | age | city      |
+| ----------- | ------- | --- | --------- |
+| 1           | Alice   | 25  | Delhi     |
+| 2           | Bob     | 30  | Mumbai    |
+| 3           | Charlie | 22  | Delhi     |
+| 4           | David   | 35  | Bangalore |
