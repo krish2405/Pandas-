@@ -1,3 +1,6 @@
-name,amount
-Bob,8000
-Alice,7000
+customer_id,name,age,city,order_id,amount,category,expensive
+1,Alice,25,Delhi,101,5000,Electronics,Normal
+1,Alice,25,Delhi,102,2000,Grocery,Normal
+2,Bob,30,Mumbai,103,8000,Fashion,Expensive
+3,Charlie,22,Delhi,104,1500,Grocery,Normal
+4,David,35,Bangalore,105,6000,Sports,Expensive
