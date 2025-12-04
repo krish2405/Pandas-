@@ -1,7 +1,6 @@
-| order_id | customer_id | amount | category    |
-| -------- | ----------- | ------ | ----------- |
-| 101      | 1           | 5000   | Electronics |
-| 102      | 1           | 2000   | Grocery     |
-| 103      | 2           | 8000   | Fashion     |
-| 104      | 3           | 1500   | Grocery     |
-| 105      | 4           | 6000   | Sports      |
+order_id,customer_id,amount,category
+101,1,5000,Electronics
+102,1,2000,Grocery
+103,2,8000,Fashion
+104,3,1500,Grocery
+105,4,6000,Sports
