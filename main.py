@@ -24,9 +24,13 @@ print(res2)
 
 
 # Add a new column discounted_amount
-# def discout()
+def discout(amount):
+    if amount>5000:
+        return amount*0.9
+    else:
+        return amount*0.95
 # filter=df2['amount']>5000
-# df2['discounted_amount']=df2['amount'].apply()
+df_combined['discounted_amount']=df_combined['amount'].apply(discout)
 
 # ✔ 6. Get only “Grocery” category orders
 
@@ -65,7 +69,7 @@ pivot_table = pd.pivot_table(
     values="amount",
     index="city",
     columns="category",
-    aggfunc="sum",
+    aggfunc=["sum",'mean'],
     fill_value=0       # replaces NaN with 0
 )
 
@@ -75,3 +79,38 @@ print(pivot_table)
 
 df_combined.to_csv("customer_orders_clean.csv",index=False)
     
+pivot__4=pd.pivot_table(
+    df_combined,
+    columns='category',
+    index='city',
+    values='amount',
+    fill_value=0,
+    aggfunc=['sum','mean','count']
+)
+print(pivot__4)
+
+def order_value(amount):
+    if amount>5000:
+        return "High"
+    elif amount>=2000 and amount<5000:
+        return "Medium"
+    else:
+        return 'Low'
+    
+df_combined['order_value_category']=df_combined['amount'].apply(order_value)
+
+print(df_combined)
+
+# domain=df_combined['email'].str.split('@')[1]
+filter=df_combined['order_value_category']=='High'
+city_wize=df_combined[filter].groupby('city').agg({
+    'order_value_category':'count'
+})
+print(city_wize)
+
+
+df_combined.drop_duplicates(inplace=True)
+df_combined.sort_values(by='discounted_amount',ascending=False,inplace=True)
+print(df_combined)
+
+df_combined.to_csv('day4_cleaned_output.csv',index=False)

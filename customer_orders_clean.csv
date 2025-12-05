@@ -1,6 +1,6 @@
-customer_id,name,age,city,order_id,amount,category,expensive
-1,Alice,25,Delhi,101,5000,Electronics,Normal
-1,Alice,25,Delhi,102,2000,Grocery,Normal
-2,Bob,30,Mumbai,103,8000,Fashion,Expensive
-3,Charlie,22,Delhi,104,1500,Grocery,Normal
-4,David,35,Bangalore,105,6000,Sports,Expensive
+customer_id,name,age,city,order_id,amount,category,discounted_amount,expensive
+1,Alice,25,Delhi,101,5000,Electronics,4750.0,Normal
+1,Alice,25,Delhi,102,2000,Grocery,1900.0,Normal
+2,Bob,30,Mumbai,103,8000,Fashion,7200.0,Expensive
+3,Charlie,22,Delhi,104,1500,Grocery,1425.0,Normal
+4,David,35,Bangalore,105,6000,Sports,5400.0,Expensive
